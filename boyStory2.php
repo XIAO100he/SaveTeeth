@@ -10,7 +10,7 @@ require('head.php');
 			みんなで &thinsp; たろうくんのくちのなかをみてみましょう
 		</p>
 		<p class="story-next">
-			<a href="selectTeeth.php" class="next-btn">▶︎つぎへ</a>
+			<a href="selectTeeth.php" class="next-btn">▶︎つぎへ・・・</a>
 		</p>
 		<div class="bother-face">
 			<img src="img/kids-kenta008.png" alt="">

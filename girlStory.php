@@ -10,7 +10,7 @@ require('head.php');
 			いわれているのに、ちゃんと &thinsp;はをみがきません
 		</p>
 		<p class="story-next">
-			<a href="girlStory2.php">▶︎つぎへ</a>
+			<a href="girlStory2.php">▶︎つぎへ・・・</a>
 		</p>
 		<div class="bother-face">
 			<img src="img/kids-yukihiko005.png" alt="">
