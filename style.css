@@ -26,6 +26,7 @@ a{
 	margin-top:20px; 
 	background: #D9EAF3;
 	border-radius: 5px;
+	box-shadow: 0 0 10px lightgrey;
 }
 h1{
 	width:400px;
@@ -80,6 +81,7 @@ h1{
 	background: #fcf7f7;
 	border: 1px solid #979797;
 	border-radius: 10px;
+	box-shadow: 0 0 10px lightgrey;
 }
 .gender-wrapper img{
 	width:180px;
@@ -107,7 +109,6 @@ h1{
 	line-height:50px;
 }
 .story-next {
-	width:150px;
 	height:50px;
 	margin-top:20px;
 	margin-right:50px;
@@ -176,6 +177,7 @@ h1{
 	position: absolute;
 	top:50px;
 	left:60px;
+	box-shadow: 0 0 10px lightgrey;
 }
 
 .matchStart-btn{
@@ -189,20 +191,169 @@ h1{
 	position: absolute;
 	top:50px;
 	right:60px;
+	box-shadow: 0 0 10px lightgrey;
+}
+/*******************戦うページ（index）***********************/
+.bacteria-wrapper{
+	height:220px;
+	margin-top:30px;
+	background: #979797;
+}
+.bacteria-leftwrap{
+	width:200px;
+	height:100%;
+	float:left;
+	margin-left:125px;
+}
+.bacteria-rightwrap{
+	width:350px;
+	height:100%;
+	float:right;
+	margin-right:125px;
+}
+.bacteria-name{
+	width:150px;
+	margin:0 auto;
+	margin-top:10px;
+	font-size: 20px;
+	color:#f4f4f4;
+	text-align: center;
+}
+.bacteria-imgwrap{
+	width:150px;
+	height:150px;
+	background: #fbfbfb;
+	margin:0 auto;
+	margin-top:10px;
+	border-radius: 5px;
+}
+.bacteria-imgwrap img{
+	width:140px;
+	height:140px;
+}
+.bacteria-msgwrap{
+	width:300px;
+	height:120px;
+	margin:0 auto;
+	margin-top:15px;
+	border-radius: 50%;
+	border: 1px solid #f4f4f4;
+	position: relative;
+}
+.bacteria-msg{
+	color:#f4f4f4;
+	font-size: 20px;
+	position: absolute;
+	top:30px;
+	left:40px;
+}
+.bacteria-hp{
+	height:50px;
+	font-size:35px;
+	color:#C61922;
+	text-align: center;
+	font-weight: 300;
+}
+.player-wrapper{
+	width:100%;
+	height:350px;
+	background: #fbfbfb;
+}
+.player-leftwrap{
+	width:340px;
+	height:100%;
+	margin-left:30px;
+	float:left;
+	position: relative;
+}
+.fightLog{
+	width:100%;
+	height:200px;
+	border: 1px solid #979797;
+	position: absolute;
+	top:40px;
+	border-radius: 5px;
+}
+.player-rightwrap{
+	width:380px;
+	height:100%;
+	float:right;
+	margin-right:30px;
+}
+.player-hp{
+	height:50px;
+	margin-top:10px;
+	font-size:35px;
+	color:#565353;
+	text-align: center;
+	position: absolute;
+	bottom:30px;
+	left:45px;
+}
+.select-item{
+	margin-top:30px;
+	font-size: 18px;
+	text-align: center;
+}
+.items-wrap{
+	width:100%;
+	height:130px;
+	margin-top:20px;
+}
+.item-wrap{
+	width:28%;
+	height:100%;
+	border: 1px solid #979797;
+	border-radius: 5px;
+	float:left;
+	margin:0 8px;
+	box-shadow: 0 0 10px lightgrey;
+}
+.itemLef{
+	background: #C9F2FA;
+}
+.itemMid{
+	background: #CACEE9;
+}
+.itemRih{
+	background: #D8F9EC;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+.itemName{
+	font-size:18px;
+	text-align: center;
+}
+.item-wrap img{
+	width:95px;
+	height:95px;
+	margin-left:8px;
+}
+.reStart{
+	width:80%;
+	height:30px;
+	margin:0 auto;
+	font-size:18px;
+	text-align: center;
+	margin-top:35px;
+	border:1px solid #979797;
+	border-radius: 5px;
+	box-shadow: 0 0 10px lightgrey;
+}
+.returnFirst{
+	width:80%;
+	height:30px;
+	margin:0 auto;
+	font-size:18px;
+	text-align: center;
+	margin-top:20px;
+	border:1px solid #979797;
+	border-radius: 5px;
+	box-shadow: 0 0 10px lightgrey;
+}
+.reStart:hover ,.returnFirst:hover{
+	background: #979797;
+	color:#fbfbfb;
+}
 
 
 
