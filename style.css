@@ -311,6 +311,15 @@ h1{
 	float:right;
 	margin-right:30px;
 }
+.bacteria-count{
+	height:50px;
+	margin-top:10px;
+	font-size:35px;
+	color:#565353;
+	text-align: center;
+	position: absolute;
+	bottom:30px;
+}
 .player-hp{
 	height:50px;
 	margin-top:10px;
@@ -319,7 +328,7 @@ h1{
 	text-align: center;
 	position: absolute;
 	bottom:30px;
-	left:45px;
+	left:160px;
 }
 .select-item{
 	margin-top:30px;
@@ -384,12 +393,27 @@ h1{
 	background: #979797;
 	color:#fbfbfb;
 }
+/*******************ゲームオーバー***********************/
+.play-again{
+	width:300px;
+	height:50px;
+	margin:0 auto;
+	margin-top:20px;
+}
 
+.playAgain-btn{
+  padding:10px 10px;
+	background: #C61922;
+	border-radius: 5px;
+	font-size:30px;
+	color:#f4f4f4;
+	text-align: center;
+	box-shadow: 0 0 10px lightgrey;
+}
 
-
-
-
-
+.playAgain-btn:hover{
+	background: #C8686D;
+}
 
 
 

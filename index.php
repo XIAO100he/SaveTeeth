@@ -132,13 +132,14 @@ function createHuman(){
 function init(){
 	History::clear();
 	History::set('----START----');
+	$_SESSION['knockDownCount'] = 0;
 	createHuman();
 	createBacteria();
 }
 
 function gameOver(){
 	$_SESSION = array();
-//	header('Location:select.php');
+	header('Location:gameOver.php');
 }
 
 
@@ -164,6 +165,7 @@ if(!empty($_POST)){
 				if($_SESSION['bacteria']->getHp() <= 0){
 					History::set($_SESSION['bacteria']->getName().' をやっつけた！');
 					createBacteria();
+					$_SESSION['knockDownCount'] = $_SESSION['knockDownCount']+1;
 				}
 			}
 		}else{ //ゆすぐを押した場合
@@ -221,11 +223,16 @@ if(!empty($_POST)){
 							<div class="fightLog js-scroll">
 								<?php echo (!empty($_SESSION['history'])) ? $_SESSION['history'] : ''; ?>
 							</div>
+							<div class="bacteria-count">
+								<span><?php echo $_SESSION['knockDownCount']; ?></span>
+								<span>たい</span>
+								<span>/</span>
+							</div>
 							<div class="player-hp">
 								<span><i class="fas fa-heart"></i></span>
 								<span>HP</span>
 								<span><?php echo $_SESSION['human']->getHp(); ?></span>
-							</div>
+							</div> 
 						</div>
 						<div class="player-rightwrap">
 							<p class="select-item">▼アイテムをせんたくして、こうげきしよう！</p>
