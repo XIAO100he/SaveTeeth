@@ -2,6 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background: #fafafa;
+	font-family: "Paytone One", "Kosugi Maru", sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6,p {
@@ -16,6 +17,9 @@ ul{
 
 a{
 	text-decoration: none;
+}
+input{
+	outline: 0;
 }
 
 /*******************大枠***********************/
@@ -57,12 +61,34 @@ h1{
 .start-btn{
 	position: relative;
 }
-.start-btn p{
-	font-size:28px;
+.start-game input{
+	width:250px;
+	height:85px;
+	font-size:26px;
+	border-style: none;
+	background: #fffef5;
 	position: absolute;
-	top:200px;
+	top:180px;
 	left:50px;
 }
+.start-game input:hover{
+	cursor: pointer;
+	color:#979797;
+}
+.returnTop{
+	width:300px;
+	float:right;
+
+}
+.returnTop a{
+	color:#565353;
+	font-size: 20px;
+}
+.returnTop a:hover{
+	color:#979797;
+	border-bottom: 1px solid #979797;
+}
+
 /*******************選択画面***********************/
 .select-sentence{
 	width:240px;
@@ -209,7 +235,7 @@ h1{
 	width:350px;
 	height:100%;
 	float:right;
-	margin-right:125px;
+	margin-right:90px;
 }
 .bacteria-name{
 	width:150px;
@@ -218,6 +244,7 @@ h1{
 	font-size: 20px;
 	color:#f4f4f4;
 	text-align: center;
+	font-weight: bold;
 }
 .bacteria-imgwrap{
 	width:150px;
@@ -232,23 +259,24 @@ h1{
 	height:140px;
 }
 .bacteria-msgwrap{
-	width:300px;
-	height:120px;
+	height:90px;
 	margin:0 auto;
-	margin-top:15px;
+	margin-top:30px;
 	border-radius: 50%;
-	border: 1px solid #f4f4f4;
+	border: 2px solid #f4f4f4;
 	position: relative;
 }
 .bacteria-msg{
 	color:#f4f4f4;
-	font-size: 20px;
+	font-size: 16px;
+	font-weight: bold;
 	position: absolute;
 	top:30px;
 	left:40px;
 }
 .bacteria-hp{
 	height:50px;
+	margin-top:20px;
 	font-size:35px;
 	color:#C61922;
 	text-align: center;
@@ -273,6 +301,9 @@ h1{
 	position: absolute;
 	top:40px;
 	border-radius: 5px;
+	font-size:13px;
+	color:#565353;
+	overflow: scroll;
 }
 .player-rightwrap{
 	width:380px;
@@ -311,23 +342,20 @@ h1{
 }
 .itemLef{
 	background: #C9F2FA;
+	background-image:url(img/brush.png);
+	background-size:contain;
 }
 .itemMid{
 	background: #CACEE9;
+	background-image:url(img/flos.png);
+	background-size:contain;
 }
 .itemRih{
 	background: #D8F9EC;
+	background-image:url(img/mouthwash.png);
+	background-size:contain;
 }
 
-.itemName{
-	font-size:18px;
-	text-align: center;
-}
-.item-wrap img{
-	width:95px;
-	height:95px;
-	margin-left:8px;
-}
 .reStart{
 	width:80%;
 	height:30px;
@@ -335,8 +363,10 @@ h1{
 	font-size:18px;
 	text-align: center;
 	margin-top:35px;
+	margin-left: 38px;
 	border:1px solid #979797;
 	border-radius: 5px;
+	color: #565353;
 	box-shadow: 0 0 10px lightgrey;
 }
 .returnFirst{
